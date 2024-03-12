@@ -111,8 +111,8 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #f3f3f5;
-  color: #000000;
+  background-color: #fbfbfb;
+  color: #051649;
 }
 
 #header.header-scrolled,
@@ -128,25 +128,46 @@ h6 {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+  
 }
 
 #header .logo a {
-  color: #fff;
+  color: #050505;
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 70px;
+  width: 70px;
 }
 
 #header h2{
   font-size: 20px;
-  margin: 0;
+  display: inline-block; /* Mengubah elemen h2 menjadi inline block */
+  line-height: 1; /* Mengatur tinggi baris menjadi 1 */
+  vertical-align: middle;
+  margin-left: 12px;
+  
 }
-.logo {
+/* .logo {
   width: 50px;
   margin-right: 10px;
 }
+.logo  {
+  display: flex;
+  gap: 20px;
+}
 
+.logo h2{
+  margin-left: 20px;
+} */
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -155,6 +176,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+  margin: auto;
   
 }
 
@@ -197,7 +219,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .navbar .getstarted,
@@ -227,7 +249,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #0a0a0a;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -294,6 +316,8 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  display: flex;
+  justify-content: end;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -650,8 +674,13 @@ section {
   
 }
 .about p{
-  font-size: 20;
-  text-justify: ;
+  font-size: 20px;
+ text-align: left;
+ 
+}
+.about-content{
+  display: flex;
+  justify-content: center;
 }
 
 .about .content .btn-learn-more {
